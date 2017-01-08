@@ -15,7 +15,7 @@ class GUI(QMainWindow):
         self.setCentralWidget(self.main_widget)
 
         self.dates_list = list()
-        self.start_day = datetime.date.today() - datetime.timedelta(days=365)
+        self.start_day = datetime.datetime(2017, 1, 1, 00, 00)
         day_value = int(self.start_day.strftime('%w'))
 
         if day_value != 0:
