@@ -72,20 +72,16 @@ def get_commit_hash(op1):
 def draw(dates):
     for date in dates:
         print(date)
-        data = "2019-06-14 00:00:00"
+        data = "2017-08-25 18:00:00 +0530"
         command = 'echo "commit" >> test.txt'
         system(command)  # number of times
-
         command = 'git add -A'
         system(command)
-
         command = 'git commit -m "commit"'
         system(command)
-
         #     command = r'git log -1'
         #     op = check_output(command)
         #     commit_hash = get_commit_hash(op)
-
         command = 'git commit --amend --no-edit --date ' + '\"' + date + '\"'
         # format: "Mon 10 Jan 2019 20:19:19 IST"
         system(command)
