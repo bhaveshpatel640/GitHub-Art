@@ -127,7 +127,7 @@ def get_commit_hash(op1):
 
 
 def draw(dates):
-    for date in dates:
+    for date in dates[0:5]:
         print('_________' + date + '_________')
         command = "echo 'commit for date - {} '>> test.txt".format(date)
         print(command)
