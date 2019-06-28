@@ -1,3 +1,5 @@
 text.txt
 .idea
 test.py
+__pycache__/*
+test.txt
